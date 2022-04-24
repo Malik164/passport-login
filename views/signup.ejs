@@ -1,0 +1,18 @@
+<%- include('./partials/header') %> 
+
+    <h1>Sign Up</h1>
+    <form action="/user/sign" method="post" class="form-control my-3">
+        <h5>Your Name:</h5>
+        <input type="text" name="uname" id="uname" class="form-control" value="<%=user.name%>">
+        <h5>Email Address</h5>
+        <input type="text" name="email" id="email" class="form-control" value="<%=user.email%>" required>
+        <h5>Password</h5>
+        <input type="text" name="password" id="password" class="form-control" value="<%=user.password%>" required>
+        <div class="my-2">
+            <button type="submit" class="btn btn-success">Sing Up</button>
+        </div>
+    </form>
+    <hr>
+    <h5>Already Logged In,Go to  Log In Page</h5>
+    <a href="/" class="btn btn-primary">Log In</a> 
+<%- include('./partials/footer') %> 
